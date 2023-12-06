@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boycotts",
+  "info": {
+    "singularName": "boycott",
+    "pluralName": "boycotts",
+    "displayName": "Boycott"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "reason": {
+      "type": "text",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "proof": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
