@@ -378,8 +378,7 @@ export interface ApiBoycottBoycott extends Schema.CollectionType {
     reason: Attribute.Text & Attribute.Required;
     logo: Attribute.Media & Attribute.Required;
     proof: Attribute.String & Attribute.Required;
-    Subsidiary: Attribute.Component<'subsidiary.subsidiary', true> &
-      Attribute.Required;
+    Subsidiary: Attribute.Component<'subsidiary.subsidiary', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
