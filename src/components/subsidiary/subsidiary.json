@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_subsidiary_subsidiaries",
+  "info": {
+    "displayName": "Subsidiary",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

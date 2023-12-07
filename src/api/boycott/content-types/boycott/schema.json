@@ -4,7 +4,8 @@
   "info": {
     "singularName": "boycott",
     "pluralName": "boycotts",
-    "displayName": "Boycott"
+    "displayName": "Boycott",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,24 +17,27 @@
       "unique": true,
       "required": true
     },
-    "description": {
-      "type": "text",
-      "required": false
-    },
     "reason": {
       "type": "text",
       "required": true
     },
     "logo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "proof": {
       "type": "string",
+      "required": true
+    },
+    "Subsidiary": {
+      "displayName": "Subsidiary",
+      "type": "component",
+      "repeatable": true,
+      "component": "subsidiary.subsidiary",
       "required": true
     }
   }

@@ -368,16 +368,18 @@ export interface ApiBoycottBoycott extends Schema.CollectionType {
     singularName: 'boycott';
     pluralName: 'boycotts';
     displayName: 'Boycott';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
-    description: Attribute.Text;
     reason: Attribute.Text & Attribute.Required;
     logo: Attribute.Media & Attribute.Required;
     proof: Attribute.String & Attribute.Required;
+    Subsidiary: Attribute.Component<'subsidiary.subsidiary', true> &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
